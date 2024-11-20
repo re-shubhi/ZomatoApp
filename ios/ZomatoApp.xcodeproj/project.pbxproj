@@ -12,9 +12,14 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1D16B0F6E642477FA52B7D10 /* Okra-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CA3E24121CD4BBE88CB751D /* Okra-Bold.ttf */; };
+		307CC87151F944DAB43C8926 /* Okra-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69DC8D302AF4A7AA2AB9AD8 /* Okra-ExtraBold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-ZomatoApp-ZomatoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ZomatoApp-ZomatoAppTests.a */; };
+		7EC7F5F8FDC944868A452A86 /* Okra-MediumLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 899101C790F84FC1B418F534 /* Okra-MediumLight.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8B3A692AEBC04071BFCFDEC4 /* Okra-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C37E26242BF0435C8E15FC5A /* Okra-Regular.ttf */; };
 		F27C67FA140B7ADBD00FC981 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		F54FCCABBED3470696C3E5E4 /* Okra-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F2CABF5EFBD495699359F44 /* Okra-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +48,13 @@
 		5709B34CF0A7D63546082F79 /* Pods-ZomatoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZomatoApp.release.xcconfig"; path = "Target Support Files/Pods-ZomatoApp/Pods-ZomatoApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-ZomatoApp-ZomatoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZomatoApp-ZomatoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ZomatoApp-ZomatoAppTests/Pods-ZomatoApp-ZomatoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ZomatoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZomatoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CA3E24121CD4BBE88CB751D /* Okra-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-Bold.ttf"; path = "../src/assets/fonts/Okra-Bold.ttf"; sourceTree = "<group>"; };
+		7F2CABF5EFBD495699359F44 /* Okra-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-Medium.ttf"; path = "../src/assets/fonts/Okra-Medium.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ZomatoApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		899101C790F84FC1B418F534 /* Okra-MediumLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-MediumLight.ttf"; path = "../src/assets/fonts/Okra-MediumLight.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ZomatoApp-ZomatoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZomatoApp-ZomatoAppTests.release.xcconfig"; path = "Target Support Files/Pods-ZomatoApp-ZomatoAppTests/Pods-ZomatoApp-ZomatoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A69DC8D302AF4A7AA2AB9AD8 /* Okra-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-ExtraBold.ttf"; path = "../src/assets/fonts/Okra-ExtraBold.ttf"; sourceTree = "<group>"; };
+		C37E26242BF0435C8E15FC5A /* Okra-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-Regular.ttf"; path = "../src/assets/fonts/Okra-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -125,6 +135,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				9250953CF78B42168CC73F68 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -138,6 +149,19 @@
 				00E356EE1AD99517003FC87E /* ZomatoAppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9250953CF78B42168CC73F68 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7CA3E24121CD4BBE88CB751D /* Okra-Bold.ttf */,
+				A69DC8D302AF4A7AA2AB9AD8 /* Okra-ExtraBold.ttf */,
+				7F2CABF5EFBD495699359F44 /* Okra-Medium.ttf */,
+				899101C790F84FC1B418F534 /* Okra-MediumLight.ttf */,
+				C37E26242BF0435C8E15FC5A /* Okra-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -247,6 +271,11 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				F27C67FA140B7ADBD00FC981 /* PrivacyInfo.xcprivacy in Resources */,
+				1D16B0F6E642477FA52B7D10 /* Okra-Bold.ttf in Resources */,
+				307CC87151F944DAB43C8926 /* Okra-ExtraBold.ttf in Resources */,
+				F54FCCABBED3470696C3E5E4 /* Okra-Medium.ttf in Resources */,
+				7EC7F5F8FDC944868A452A86 /* Okra-MediumLight.ttf in Resources */,
+				8B3A692AEBC04071BFCFDEC4 /* Okra-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
