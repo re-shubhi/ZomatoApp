@@ -1,14 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import Navigation from '@navigation/Navigation';
+import '@unistyles/unistyles'
 
 const App = () => {
-  return (
-    <View>
-      <Text>App check git</Text>
-    </View>
-  )
-}
+  return <Navigation />;
+};
 
-export default App
+export default App;
 
-const styles = StyleSheet.create({})
+
