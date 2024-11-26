@@ -1,23 +1,27 @@
 import DeliveryScreen from '@features/delivery/DeliveryScreen';
-import DiningScreen from '@features/delivery/DeliveryScreen';
+import DiningScreen from '@features/dining/DiningScreen';
 import LiveScreen from '@features/live/LiveScreen';
 import ReorderScreen from '@features/reorder/ReorderScreen';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import CustomTabBar from './CustomTabBar';
 
 const Tab = createBottomTabNavigator();
 
 const UserBottomTab: React.FC = () => {
   return (
     <Tab.Navigator
+    tabBar={(...props) => <CustomTabBar  {...props}/>}
       screenOptions={{
         headerShown: false,
         tabBarHideOnKeyboard: true,
       }}
-      initialRouteName="DeliveryScreen">
-      <Tab.Screen name="DiningScreen" component={DiningScreen} />
-      <Tab.Screen name="LiveScreen" component={LiveScreen} />
-      <Tab.Screen name="ReorderScreen" component={ReorderScreen} />
-      <Tab.Screen name="DeliveryScreen" component={DeliveryScreen} />
+      initialRouteName="Reorder">
+      <Tab.Screen name="Delivery" component={DeliveryScreen} />
+      <Tab.Screen name="Reorder" component={ReorderScreen} />
+      <Tab.Screen name="Dining" component={DiningScreen} />
+      <Tab.Screen name="Live" component={LiveScreen} />
+    
+
     </Tab.Navigator>
   );
 };

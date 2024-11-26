@@ -1,6 +1,6 @@
 import LoginScreen from '@features/auth/LoginScreen';
 import SplashScreen from '@features/auth/SplashScreen';
-import UserBottomTab from '@features/tabs/UserBottomTab';
+import AnimatedTabs from '@features/tabs/AnimatedTabs';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {navigationRef} from '@utils/NavigationUtils';
@@ -12,7 +12,7 @@ const Navigation: FC = () => {
   return (
     <NavigationContainer ref={navigationRef}>
       <Stack.Navigator
-        initialRouteName={'LoginScreen'}
+        initialRouteName={'UserBottomTab'}
         screenOptions={{
           headerShown: false,
         }}>
@@ -29,7 +29,7 @@ const Navigation: FC = () => {
             animation: 'fade',
           }}
           name="UserBottomTab"
-          component={UserBottomTab}
+          component={AnimatedTabs}
         />
       </Stack.Navigator>
     </NavigationContainer>
