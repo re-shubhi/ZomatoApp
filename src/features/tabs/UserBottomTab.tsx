@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator();
 const UserBottomTab: React.FC = () => {
   return (
     <Tab.Navigator
-    tabBar={(...props) => <CustomTabBar  {...props}/>}
+      tabBar={props => <CustomTabBar {...props} />}
       screenOptions={{
         headerShown: false,
         tabBarHideOnKeyboard: true,
@@ -20,8 +20,6 @@ const UserBottomTab: React.FC = () => {
       <Tab.Screen name="Reorder" component={ReorderScreen} />
       <Tab.Screen name="Dining" component={DiningScreen} />
       <Tab.Screen name="Live" component={LiveScreen} />
-    
-
     </Tab.Navigator>
   );
 };
