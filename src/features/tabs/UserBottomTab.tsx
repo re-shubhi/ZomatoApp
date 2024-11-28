@@ -15,7 +15,7 @@ const UserBottomTab: React.FC = () => {
         headerShown: false,
         tabBarHideOnKeyboard: true,
       }}
-      initialRouteName="Reorder">
+      initialRouteName="Delivery">
       <Tab.Screen name="Delivery" component={DeliveryScreen} />
       <Tab.Screen name="Reorder" component={ReorderScreen} />
       <Tab.Screen name="Dining" component={DiningScreen} />
