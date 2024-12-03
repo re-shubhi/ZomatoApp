@@ -51,7 +51,9 @@ const RecommendedList = () => {
               source={require('@assets/icons/bookmark.png')}
             />
           </TouchableOpacity>
+
           <CustomGradient position="bottom" />
+          
         </View>
         <View style={styles.itemInfo}>
           <CustomText

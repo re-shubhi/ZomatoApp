@@ -1,5 +1,6 @@
 import LoginScreen from '@features/auth/LoginScreen';
 import SplashScreen from '@features/auth/SplashScreen';
+import RestaurantScreen from '@features/restaurants/RestaurantScreen';
 import AnimatedTabs from '@features/tabs/AnimatedTabs';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -16,6 +17,7 @@ const Navigation: FC = () => {
         screenOptions={{
           headerShown: false,
         }}>
+        <Stack.Screen name="RestaurantScreen" component={RestaurantScreen} />
         <Stack.Screen name="SplashScreen" component={SplashScreen} />
         <Stack.Screen
           options={{

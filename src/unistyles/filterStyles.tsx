@@ -1,10 +1,12 @@
 import { createStyleSheet } from "react-native-unistyles";
+import { Colors } from "./Constants";
 
 export const filtertyles = createStyleSheet(({ colors, device, border }) => ({
     filterBar: {
         paddingHorizontal: 10,
         paddingBottom:10,
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor:Colors.background
     },
     filterItem: {
         flexDirection: 'row',

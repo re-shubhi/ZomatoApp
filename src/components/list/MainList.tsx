@@ -12,7 +12,10 @@ import RestaurantSection from '@components/home/RestaurantSection';
 import {useStyles} from 'react-native-unistyles';
 import {restaurantStyles} from '@unistyles/restuarantStyles';
 import {useSharedState} from '@features/tabs/SharedContext';
-import {useAnimatedStyle, withTiming} from 'react-native-reanimated';
+import Animated, {useAnimatedStyle, withTiming} from 'react-native-reanimated';
+import BackToTopButton from '@components/ui/BackToTopButton';
+import SortingAndFilters from '@components/home/SortingAndFilters';
+import {filtersOption} from '@utils/dummyData';
 
 const sectionData = [
   {
@@ -100,20 +103,39 @@ const MainList: FC = () => {
   };
 
   return (
-    <SectionList
-      sections={sectionData}
-      overScrollMode="always"
-      onScroll={handleScroll}
-      scrollEventThrottle={16}
-      bounces={false}
-      nestedScrollEnabled
-      showsVerticalScrollIndicator={false}
-      keyExtractor={(item, index) => index.toString()}
-      stickySectionHeadersEnabled={true}
-      contentContainerStyle={styles.listContainer}
-      viewabilityConfig={viewabilityConfig}
-      onViewableItemsChanged={onViewableItemsChanged}
-    />
+    <>
+      <Animated.View style={[styles.backToTopButton, backToTopStyle]}>
+        <BackToTopButton onPress={handleScrollToTop} />
+      </Animated.View>
+      <SectionList
+        sections={sectionData}
+        overScrollMode="always"
+        onScroll={handleScroll}
+        scrollEventThrottle={16}
+        bounces={false}
+        ref={sectionListRef}
+        renderSectionHeader={({section}) => {
+          if (section?.title != 'Restaurant') {
+            return null;
+          }
+          return (
+            <Animated.View
+              style={[
+                isRestaurantVisible || isNearEnd ? styles.shadowBottom : null,
+              ]}>
+              <SortingAndFilters menuTitle="sort" options={filtersOption} />
+            </Animated.View>
+          );
+        }}
+        nestedScrollEnabled
+        showsVerticalScrollIndicator={false}
+        keyExtractor={(item, index) => index.toString()}
+        stickySectionHeadersEnabled={true}
+        contentContainerStyle={styles.listContainer}
+        viewabilityConfig={viewabilityConfig}
+        onViewableItemsChanged={onViewableItemsChanged}
+      />
+    </>
   );
 };
 

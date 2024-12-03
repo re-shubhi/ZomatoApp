@@ -5,8 +5,8 @@ import {Text, View} from 'react-native-reanimated/lib/typescript/Animated';
 interface ScalePressProps {
   onPress?: () => void;
   onLongPress?: () => void;
-  children: React.ReactNode;
-  style: ViewStyle | ViewStyle[];
+  children?: React.ReactNode;
+  style?: ViewStyle | ViewStyle[];
 }
 
 const ScalePress: FC<ScalePressProps> = ({
