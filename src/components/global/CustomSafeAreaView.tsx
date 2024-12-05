@@ -1,12 +1,21 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import {View, Text, ViewStyle, StyleSheet} from 'react-native';
+import React, {FC, ReactNode} from 'react';
+import { Colors } from '@unistyles/Constants';
 
-const CustomSafeAreaView = () => {
-  return (
-    <View>
-      <Text>CustomSafeAreaView</Text>
-    </View>
-  )
+interface CustomSafeAreaViewProps {
+  children: ReactNode;
+  style?: ViewStyle;
 }
 
-export default CustomSafeAreaView
+const CustomSafeAreaView: FC<CustomSafeAreaViewProps> = ({children, style}) => {
+  return <View style={[styles.container, style]}>{children}</View>;
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: Colors.background,
+  },
+});
+
+export default CustomSafeAreaView;

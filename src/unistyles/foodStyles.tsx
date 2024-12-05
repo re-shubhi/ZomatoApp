@@ -25,7 +25,8 @@ export const foodStyles = createStyleSheet(({ device, colors, border }) => ({
     lowOpacity: {
         opacity: 0.5,
         marginTop: 2,
-        marginBottom: 10
+        marginBottom: 10,
+        textAlign:'left'
     },
     infoContainer: {
         width: '57%',

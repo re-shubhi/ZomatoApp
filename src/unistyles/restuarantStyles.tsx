@@ -24,7 +24,7 @@ export const restaurantStyles = createStyleSheet(({ device, colors, border }) =>
         elevation: 5,
         shadowRadius: 10,
         shadowColor: colors.dark,
-        margin: 10
+        margin: 10,
     },
     image: {
         borderTopLeftRadius: border.lg,
@@ -40,7 +40,8 @@ export const restaurantStyles = createStyleSheet(({ device, colors, border }) =>
         marginBottom: 5,
     },
     details: {
-        opacity: 0.7
+        opacity: 0.7,
+        
     },
     textContainer: {
         flexDirection: 'row',
@@ -48,7 +49,8 @@ export const restaurantStyles = createStyleSheet(({ device, colors, border }) =>
         justifyContent: 'space-between',
     },
     textPart: {
-        width: '70%'
+        width: '80%',
+        alignItems:'flex-start'
     },
     backToTopButton: {
         position: 'absolute',
@@ -80,6 +82,7 @@ export const restaurantHeaderStyles = createStyleSheet(({ device, colors, border
         alignItems: 'center',
         justifyContent: "space-between",
         paddingVertical: 10,
+        paddingTop:70,
         paddingHorizontal: 5,
         ...shadowStyle
     },

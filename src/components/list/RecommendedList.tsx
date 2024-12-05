@@ -23,7 +23,7 @@ const RecommendedList = () => {
     return (
       <ScalePress
         style={styles.itemContainer}
-        onPress={() => navigate('RestaurantScreen')}>
+        onPress={() => navigate('RestaurantScreen',{item})}>
         <View style={styles.imageContainer}>
           <Image source={{uri: item?.imageUrl}} style={styles.itemImage} />
           {item?.discount && (

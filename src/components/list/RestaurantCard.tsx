@@ -6,6 +6,7 @@ import ScalePress from '@components/ui/ScalePress';
 import {navigate} from '@utils/NavigationUtils';
 import CustomText from '@components/global/CustomText';
 import StarRating from '@components/ui/StarRating';
+import DottedLine from '@components/ui/DottedLine';
 
 const RestaurantCard: FC<{item: any}> = ({item}) => {
   const {styles} = useStyles(restaurantStyles);
@@ -28,12 +29,19 @@ const RestaurantCard: FC<{item: any}> = ({item}) => {
                 numberOfLines={1}>
                 {item?.name}
               </CustomText>
-              <CustomText>
+              <CustomText >
                 {item?.time} • {item?.distance} • ₹ 150 for one
               </CustomText>
             </View>
-            <StarRating rating={item?.rating}/>
+            <StarRating rating={item?.rating} />
           </View>
+          <DottedLine />
+          {item?.discount && (
+            <CustomText style={{alignSelf:'flex-start'}}>
+              {item?.discount}{' '}
+              {item?.discountAmount && `• ${item?.discountAmount}`}
+            </CustomText>
+          )}
         </View>
       </View>
     </ScalePress>
