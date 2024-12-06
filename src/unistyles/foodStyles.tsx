@@ -57,7 +57,6 @@ export const foodStyles = createStyleSheet(({ device, colors, border }) => ({
         resizeMode: "cover",
         borderRadius: 15
     },
-
     customizeText: {
         textAlign: 'center',
         opacity: 0.6,
