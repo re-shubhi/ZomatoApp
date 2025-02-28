@@ -13,7 +13,7 @@ const Navigation: FC = () => {
   return (
     <NavigationContainer ref={navigationRef}>
       <Stack.Navigator
-        initialRouteName={'UserBottomTab'}
+        initialRouteName={'SplashScreen'}
         screenOptions={{
           headerShown: false,
         }}>

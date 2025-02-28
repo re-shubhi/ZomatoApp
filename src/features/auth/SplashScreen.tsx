@@ -1,40 +1,17 @@
-import {Image, Platform, StatusBar, StyleSheet, Text, View} from 'react-native';
-import React, {FC} from 'react';
-import {useStyles} from 'react-native-unistyles';
-import {splashStyles} from '@unistyles/authStyles';
-import Animated, {FadeInDown} from 'react-native-reanimated';
-import CustomText from '@components/global/CustomText';
+import { StyleSheet, Text, View } from 'react-native'
+import React, { FC } from 'react'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
-const SplashScreen: FC = () => {
-  const {styles} = useStyles(splashStyles);
-
+const SplashScreen : FC = () => {
   return (
-    <View style={styles.container}>
-      <StatusBar hidden={Platform.OS !== 'android'} />
-      <Image
-        source={require('@assets/images/logo_t.png')}
-        style={styles.logoImage}
-      />
-      <Animated.View
-        style={styles.animatedContainer}
-        entering={FadeInDown.delay(400).duration(800)}>
-        <Image
-          source={require('@assets/images/tree.png')}
-          style={styles.treeImage}
-        />
-
-        <CustomText
-          variant="h4"
-          style={styles.msgText}
-          fontFamily="Okra-Medium"
-          color="#fff">
-          Carbon and Plastic Neutral Deliveries in India
-        </CustomText>
-      </Animated.View>
+    <SafeAreaView>
+      <View>
+      <Text>SplashScreen</Text>
     </View>
-  );
-};
+    </SafeAreaView>
+  )
+}
 
-export default SplashScreen;
+export default SplashScreen
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({})
